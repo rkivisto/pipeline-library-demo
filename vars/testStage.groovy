@@ -1,9 +1,4 @@
 def call() {
-	stage('Test') {
-		agent any
-		steps {
-			unstash 'myApp'
-			echo 'testing...'
-		}
-	}
+	unstash 'myApp'
+	echo 'testing...'
 }
