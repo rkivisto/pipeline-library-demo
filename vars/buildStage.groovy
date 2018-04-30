@@ -7,3 +7,4 @@ def call() {
 	sh 'touch a.jar'
 	stash includes: 'a.jar', name: 'myApp'
 }
+return this;
